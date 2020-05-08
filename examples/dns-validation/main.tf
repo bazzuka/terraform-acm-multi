@@ -1,6 +1,6 @@
 locals {
     ssl_domains = [
-        { domain_name = "dev.domain.com", zone_name = "nightly.domain.com" },
+        { domain_name = "dev.domain.com", zone_name = "dev.domain.com" },
         { domain_name = "preview.domain.com", zone_name = "preview.domain.com" }
     ]
     tags = {
