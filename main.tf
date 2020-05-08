@@ -41,7 +41,8 @@ resource "aws_acm_certificate" "this" {
 }
 
 data "aws_route53_zone" "this" {
-  count = length(var.domains_list)
+  count = var.create_certificate && var.validation_method == "DNS" && var.validate_certificate ? length(var.domains_list) : 0
+  
   name = var.domains_list[count.index]["zone_name"]
   private_zone = false
 }
