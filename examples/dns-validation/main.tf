@@ -9,7 +9,7 @@ locals {
 }
 
 module "acm-multi" {
-  source  = "../../modules/acm_multi"
+  source  = "../../"
 
   domains_list = local.ssl_domains
   create_certificate  = true
