@@ -64,7 +64,7 @@ module "acm-multi1" {
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | create\_certificate | Whether to create ACM certificate | bool | `"true"` | no |
-| domains\_list | List of maps with domains and zone ids  | list | `[]` | no |
+| domains\_list | List of maps with domains and zone names  | list | `[]` | no |
 | tags | A mapping of tags to assign to the resource | map(string) | `{}` | no |
 | validate\_certificate | Whether to validate certificate by creating Route53 record | bool | `"true"` | no |
 | validation\_allow\_overwrite\_records | Whether to allow overwrite of Route53 records | bool | `"true"` | no |
