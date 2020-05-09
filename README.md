@@ -1,7 +1,7 @@
 # AWS Certificate Manager (ACM) Terraform module for multiple domains
 
 Terraform module which creates ACM certificates and validates them using Route53 DNS (recommended) or e-mail.
-This module can create wildcard certificates for multiple domains in different hosted zones. 
+This module can create wildcard certificates for multiple domains in different hosted zones, forked from the public Amazon ACM module. 
 
 ## Terraform versions
 
