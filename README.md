@@ -28,7 +28,6 @@ module "acm-multi1" {
 ## Examples
 
 * [ Example with DNS validation (recommended)](https://github.com/bazzuka/terraform-acm-multi/tree/master/examples/dns-validation)
-* [Complete example with EMAIL validation](https://github.com/terraform-aws-modules/terraform-aws-acm/tree/master/examples/complete-email-validation)
 
 ## Conditional creation and validation
 
