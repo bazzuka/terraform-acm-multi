@@ -5,7 +5,7 @@ variable "create_certificate" {
 }
 
 variable "domains_list" {
-  description = "List of maps with domains and zone names "
+  description = "List of maps with domains and zone names"
   type        = list
   default     = []
 }

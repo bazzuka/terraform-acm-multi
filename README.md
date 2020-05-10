@@ -12,7 +12,7 @@ Terraform 0.12.
 ```hcl
 module "acm-multi1" {
   source  = "bazzuka/multi/acm"
-  version = "1.0.0"
+  version = "1.0.1"
 
   domains_list = [{ domain_name = "dev.domain.com", zone_name = "dev.domain.com" },
                   { domain_name = "preview.domain.com", zone_name = "preview.domain.com" }]
@@ -36,7 +36,7 @@ Sometimes you need to have a way to create ACM certificate conditionally but Ter
 ```hcl
 module "acm-multi1" {
   source  = "bazzuka/multi/acm"
-  version = "1.0.0"
+  version = "1.0.1"
 
   create_certificate = false
   # ... omitted
@@ -48,7 +48,7 @@ Similarly, to disable DNS validation of ACM certificate:
 ```hcl
 module "acm-multi1" {
   source  = "bazzuka/multi/acm"
-  version = "1.0.0"
+  version = "1.0.1"
 
   validate_certificate = false
   # ... omitted
@@ -75,5 +75,5 @@ module "acm-multi1" {
 
 | Name | Description |
 |------|-------------|
-| certificate\_arns | The ARN of the certificates mapped to domains |
+| domain\_2\_certarn | The ARN of the certificates mapped to domains |
 
