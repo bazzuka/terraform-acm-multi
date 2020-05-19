@@ -10,7 +10,7 @@ Terraform 0.12.
 ## Usage with Route53 DNS validation (recommended)
 
 ```hcl
-module "acm-multi1" {
+module "acm-multi" {
   source  = "bazzuka/multi/acm"
   version = "1.0.1"
 
@@ -34,7 +34,7 @@ module "acm-multi1" {
 Sometimes you need to have a way to create ACM certificate conditionally but Terraform does not allow to use `count` inside `module` block, so the solution is to specify argument `create_certificate`.
 
 ```hcl
-module "acm-multi1" {
+module "acm-multi" {
   source  = "bazzuka/multi/acm"
   version = "1.0.1"
 
@@ -46,7 +46,7 @@ module "acm-multi1" {
 Similarly, to disable DNS validation of ACM certificate:
 
 ```hcl
-module "acm-multi1" {
+module "acm-multi" {
   source  = "bazzuka/multi/acm"
   version = "1.0.1"
 
